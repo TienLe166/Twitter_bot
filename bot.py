@@ -195,30 +195,34 @@ print("✅ All API keys loaded!")
 
 # Current Tracked Projects - 8 Projects
 projects = {
-    "infinitlabs": {
-        "mention": "@infinitlabs", 
-        "focus": "DeFi Infrastructure", 
-        "specialty": "next-gen yield farming and liquidity management protocol",
-        "trends": ["yield aggregation technology", "automated portfolio rebalancing", "cross-chain DeFi", "institutional DeFi tools"],
-        "price_action": "airdrop program approaching, TVL increasing",
-        "ecosystem": "Multi-chain DeFi protocol",
-        "personality": "yield and efficiency focused",
+    "Vooi": {
+        "mention": "@vooi_io", 
+        "focus": "DeFi, DEX aggregation", 
+        "specialty": "Aggregating perpetual contract DEXes with zero-gas trading",
+        "trends": ["Multi-chain DeFi", "Gasless transactions", "cross-chain DeFi", "Perpetual contract trading"],
+        "price_action": "Points program for potential airdrop, active campaign on Cookie platform",
+        "ecosystem": "Multi-chain DeFi",
+        "personality": "Efficiency and user experience focused",
         "token_status": "pre_token",
-        "tech_detail": "Automated vault system optimizing yield farming strategies. Cross-chain liquidity routing, risk-adjusted returns, gas optimization algorithms. Institutional grade risk management tools."
+        "tech_detail": "Intent-based trading for zero-gas transactions, aggregating liquidity from multiple perpetual DEXes, cross-chain compatibility"
     },
-    "anoma": {
-        "mention": "@anoma", 
-        "focus": "intent-centric blockchain", 
-        "specialty": "intent-based architecture offering radical simplification in user experience",
-        "trends": ["intent-based architectures evolving", "user experience focused blockchain", "privacy technologies", "chain-agnostic solutions"],
-        "price_action": "in development phase before mainnet", 
-        "ecosystem": "Intent-centric L1 blockchain",
-        "personality": "technical and privacy focused",
-        "token_status": "pre_token",
-        "tech_detail": "Intent-centric architecture where users declare what they want to do. zk-SNARKs integrated privacy, 3000+ TPS target performance."
+    "recall": {
+      "mention": "@recallnet",
+      "focus": "AI and blockchain",
+      "specialty": "Decentralized intelligence network for AI agents",
+      "trends": [
+        "AI agents",
+        "Decentralized knowledge networks",
+        "On-chain AI"
+      ],
+      "price_action": "Token launched, trading, featured in SNAPS campaign on Cookie",
+      "ecosystem": "EVM-compatible chains",
+      "personality": "AI and decentralization focused",
+      "token_status": "Active",
+      "tech_detail": "Decentralized network for AI agents to store and share knowledge, with AgentRank reputation system, token incentives for participation"
     },
     "memex": {
-        "mention": "@MemeXprotocol",
+        "mention": "@MemeX_MRC20",
         "focus": "meme coin infrastructure",
         "specialty": "meme coin creation and management platform",
         "trends": ["meme coin season", "retail trader tools", "automated meme trading", "social media integration"],
@@ -228,16 +232,20 @@ projects = {
         "token_status": "active",
         "tech_detail": "One-click meme coin deployment, automated liquidity provision, social sentiment tracking, viral marketing tools integration."
     },
-    "uxlink": {
-        "mention": "@UXLINKofficial",
-        "focus": "social infrastructure",
-        "specialty": "Web3 social network and communication infrastructure",
-        "trends": ["Web3 social applications", "decentralized messaging", "social token economy", "community governance"],
-        "price_action": "social features in beta, user growth present",
-        "ecosystem": "Web3 social protocol",
-        "personality": "social and community focused",
-        "token_status": "active",
-        "tech_detail": "Decentralized messaging, social graph ownership, reputation systems, community reward mechanisms, cross-platform social identity."
+    "elympics": {
+      "mention": "@elympics_ai",
+      "focus": "Web3 gaming",
+      "specialty": "Protocol for building competitive Web3 games",
+      "trends": [
+        "Web3 gaming",
+        "Competitive gaming",
+        "Blockchain in gaming"
+      ],
+      "price_action": "Token launched, trading, $COOKIE stakers whitelisted for $ELP presale",
+      "ecosystem": "Multi-chain gaming",
+      "personality": "Gaming and competition focused",
+      "token_status": "Active",
+      "tech_detail": "Web3 gaming protocol with Unity integration, provable fairness, on-chain leaderboards, and token rewards for players"
     },
     "mitosis": {
         "mention": "@mitosis_org", 
@@ -256,32 +264,55 @@ projects = {
         "specialty": "platform tokenizing AI agents to create an economy",
         "trends": ["AI agent tokens gaining interest", "AI tokenization", "GameFi AI integrations", "AI agent market growing"],
         "price_action": "performing in AI token sector",
-        "ecosystem": "AI agent economy and marketplace",
+        "ecosystem": "AI agent marketplace with Base integration and partnerships (Nillion, Virtual Labs, Aikoi.ai)",
         "personality": "AI and tokenization focused",
         "token_status": "active",
-        "tech_detail": "AI agent marketplace, automatic task execution, revenue sharing token economy, 1000+ active AI agents."
+        "tech_detail": "Marketplace with task execution, revenue sharing, 1000+ AI agents, Super APP"
     },
-    "pharos": {
-        "mention": "@pharosnetwork",
-        "focus": "Layer-1 blockchain infrastructure",
-        "specialty": "EVM-compatible fast blockchain with DeFi and RWA focused ecosystem",
-        "trends": ["Layer-1 competition increasing", "EVM compatibility standard", "RWA tokenization growing", "airdrop programs"],
-        "price_action": "testnet live, airdrop program active",
-        "ecosystem": "DeFi, RWA and DePIN applications",
-        "personality": "performance and RWA focused",
-        "token_status": "pre_token",
-        "tech_detail": "EVM compatible L1, 1 second finality, AsyncBFT consensus, testnet incentive program active."
+    "cookie": {
+      "mention": "@cookiedotfun",
+      "focus": "AI and data",
+      "specialty": "Indexing and providing real-time data on AI agents",
+      "trends": [
+        "AI data",
+        "Decentralized data markets",
+        "AI agents"
+      ],
+      "price_action": "Token launched, trading",
+      "ecosystem": "Ethereum or EVM-compatible",
+      "personality": "Data and AI focused",
+      "token_status": "Active",
+      "tech_detail": "Aggregating and indexing data from AI agents, providing analytics and insights, with API access for developers"
     },
-    "zama": {
-        "mention": "@zama_fhe",
-        "focus": "Fully Homomorphic Encryption (FHE)",
-        "specialty": "FHE technology enabling full privacy on blockchain",
-        "trends": ["privacy technologies coming to forefront", "FHE adoption increasing", "confidential smart contracts", "private DeFi"],
-        "price_action": "in technology development phase, high investor interest",
-        "ecosystem": "Privacy-focused blockchain protocol",
-        "personality": "privacy and crypto focused",
-        "token_status": "pre_token",
-        "tech_detail": "fhEVM v0.7 testnet live, private smart contracts in Solidity, 1000+ TPS target with FHE ASICs."
+    "openledger": {
+      "mention": "@OpenledgerHQ",
+      "focus": "AI and blockchain",
+      "specialty": "Decentralized compute for AI models",
+      "trends": [
+        "Decentralized AI",
+        "AI compute",
+        "Blockchain for AI"
+      ],
+      "price_action": "Points program for potential token, active campaign on Cookie",
+      "ecosystem": "Multi-chain or AI-focused chains",
+      "personality": "AI and decentralization focused",
+      "token_status": "Pre-token",
+      "tech_detail": "Decentralized infrastructure for training and deploying AI models, using blockchain for resource allocation and rewards"
+    },
+    "kaito": {
+      "mention": "@KaitoAI",
+      "request": "AI-powered crypto research",
+      "specialty": "Using AI to analyze crypto data and provide insights",
+      "trends": [
+        "AI in crypto",
+        "Data analysis",
+        "Research tools"
+      ],
+      "price_action": "Token launched, trading",
+      "ecosystem": "Ethereum or similar",
+      "personality": "Research and data focused",
+      "token_status": "Active",
+      "tech_detail": "AI-powered search engine and analytics platform for crypto data, providing insights on market trends, sentiment, and more"
     }
 }
 
